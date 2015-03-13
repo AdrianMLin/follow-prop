@@ -10,9 +10,15 @@ class HomeController < ApplicationController
 
     # get all popular posts
 
-    # get ids
+    # get ids of images
 
-    # from ids get all likes
+    # from  image ids get all likes
+
+    # from likes get all users
+
+    # paginate users, sort by ratio
+
+    # send users to models
 
     binding.pry
 
