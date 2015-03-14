@@ -172,3 +172,244 @@ NameError (undefined local variable or method `client_id' for #<HomeController:0
   Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
   Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
   Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 14:43:01 -0400
+Processing by HomeController#index as HTML
+Completed   in 21330ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 14:43:48 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 552240ms
+
+ActionView::Template::Error (undefined local variable or method `client_id' for #<#<Class:0x007fd28a0078c8>:0x007fd28a006e50>):
+    1: <h1> Index! </h1>
+    2: 
+    3: <%=client_id%>
+  app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb__1325782358097150416_70271100672020'
+  app/controllers/home_controller.rb:30:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.6ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 14:53:11 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 789ms
+
+TypeError (no implicit conversion of Fixnum into String):
+  app/controllers/home_controller.rb:39:in `+'
+  app/controllers/home_controller.rb:39:in `block in index'
+  app/controllers/home_controller.rb:36:in `each'
+  app/controllers/home_controller.rb:36:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 14:53:28 -0400
+Processing by HomeController#index as HTML
+Completed   in 295147ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 14:58:30 -0400
+Processing by HomeController#index as HTML
+Completed   in 431132ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:05:52 -0400
+Processing by HomeController#index as HTML
+Completed   in 599359ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:16:00 -0400
+Processing by HomeController#index as HTML
+Completed   in 339148ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:21:45 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 668785ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:24:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:33:02 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 715ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:23:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:33:36 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 928ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:23:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.3ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:33:41 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 912ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:23:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:34:06 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 79249ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:24:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:35:31 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 46938ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:27:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:37:01 -0400
+Processing by HomeController#index as HTML
+Completed   in 11764ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:37:32 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 993ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:27:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.9ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:38:35 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 720ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:27:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:17:in `each'
+  app/controllers/home_controller.rb:17:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:39:03 -0400
+Processing by HomeController#index as HTML
+Completed   in 111480ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:41:02 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2984ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/home_controller.rb:35:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:32:in `each'
+  app/controllers/home_controller.rb:32:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:41:41 -0400
+Processing by HomeController#index as HTML
+Completed   in 21543ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-14 15:42:06 -0400
+Processing by HomeController#index as HTML
