@@ -642,3 +642,155 @@ Completed   in 143346ms
 
 Started GET "/" for 127.0.0.1 at 2015-03-15 16:58:13 -0400
 Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 295239ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:         <h1>username: <%=user["username"]%> </h1>
+     8:         <h3>full name: <%=user['full_name']%></h3>
+     9:         <img src="<%=user['profile_picture']%>" alt="<%=user['username']%>">
+    10:         <p>Uploaded media: <%=user['counts']['media']%> </p>
+    11:         <p>Followers: <%=user['counts']['follows']%> </p>
+    12:         <p>Followed by: <%=user['counts']['followed_by']%> </p>
+    13:         <p>Following-to-follower ratio:</p>
+  app/views/home/index.html.erb:10:in `block in _app_views_home_index_html_erb___3020742779708927862_70161293599640'
+  app/views/home/index.html.erb:4:in `each'
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb___3020742779708927862_70161293599640'
+  app/controllers/home_controller.rb:58:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.1ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:04:04 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 47836ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:         <h1>username: <%=user["username"]%> </h1>
+     8:         <h3>full name: <%=user['full_name']%></h3>
+     9:         <img src="<%=user['profile_picture']%>" alt="<%=user['username']%>">
+    10:         <p>Uploaded media: <%=user['counts']['media'].length%> </p>
+    11:         <p>Followers: <%=user['counts']['follows']%> </p>
+    12:         <p>Followed by: <%=user['counts']['followed_by']%> </p>
+    13:         <p>Following-to-follower ratio: <%=user['following_to_follower_ratio']%></p>
+  app/views/home/index.html.erb:10:in `block in _app_views_home_index_html_erb__196957195649824157_70093132537040'
+  app/views/home/index.html.erb:4:in `each'
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__196957195649824157_70093132537040'
+  app/controllers/home_controller.rb:58:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.0ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:28:07 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 1194ms
+
+NoMethodError (undefined method `<=' for nil:NilClass):
+  app/controllers/home_controller.rb:34:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:19:in `each'
+  app/controllers/home_controller.rb:19:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:28:50 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2035ms
+
+NoMethodError (undefined method `/' for nil:NilClass):
+  app/controllers/home_controller.rb:35:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:19:in `each'
+  app/controllers/home_controller.rb:19:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:28:54 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 789ms
+
+NoMethodError (undefined method `/' for nil:NilClass):
+  app/controllers/home_controller.rb:35:in `block (2 levels) in index'
+  app/controllers/home_controller.rb:19:in `each'
+  app/controllers/home_controller.rb:19:in `block in index'
+  app/controllers/home_controller.rb:14:in `each'
+  app/controllers/home_controller.rb:14:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:31:58 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 96443ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     7:         <h1>username: <%=user["username"]%> </h1>
+     8:         <h3>full name: <%=user['full_name']%></h3>
+     9:         <img src="<%=user['profile_picture']%>" alt="<%=user['username']%>">
+    10:         <p>Uploaded media: <%=user['counts']['media']%> </p>
+    11:         <p>Followers: <%=user['counts']['follows']%> </p>
+    12:         <p>Followed by: <%=user['counts']['followed_by']%> </p>
+    13:         <p>Following-to-follower ratio: <%=user['following_to_follower_ratio']%></p>
+  app/views/home/index.html.erb:10:in `block in _app_views_home_index_html_erb__4568715770796230863_70218789272500'
+  app/views/home/index.html.erb:4:in `each'
+  app/views/home/index.html.erb:4:in `_app_views_home_index_html_erb__4568715770796230863_70218789272500'
+  app/controllers/home_controller.rb:58:in `index'
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-15 17:35:10 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 63747ms (Views: 319.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/angular-app/app.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
