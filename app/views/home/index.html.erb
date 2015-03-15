@@ -1,3 +1,18 @@
 <h1> Index! </h1>
 
-<%=client_id%>
+<ul>
+  <%commenters.each do |user|%>
+    <li>
+      <section>
+        <h1>username: <%=user["username"]%> </h1>
+        <h3>full name: <%=user['full_name']%></h3>
+        <img src="<%=user['profile_picture']%>" alt="<%=user['username']%>">
+        <p>Uploaded media: <%=user['counts']['media']%> </p>
+        <p>Followers: <%=user['counts']['follows']%> </p>
+        <p>Followed by: <%=user['counts']['followed_by']%> </p>
+        <p>Following-to-follower ratio:</p>
+
+      </section>
+    </li>
+  <%end%>
+</ul>
