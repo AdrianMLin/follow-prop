@@ -54,9 +54,6 @@ class HomeController < ApplicationController
       # end
       
     end
-    commenters
-
-    binding.pry
 
     render(:index, {locals: {commenters: commenters} } )
   end
