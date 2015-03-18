@@ -794,3 +794,24 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14
 
 
 Started GET "/assets/angular/angular.js?body=1" for 127.0.0.1 at 2015-03-15 17:36:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 20:50:18 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 362404ms (Views: 104.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 20:56:28 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 165021ms (Views: 288.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 20:59:14 -0400
+Processing by HomeController#index as HTML
+Completed   in 11311ms
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 20:59:31 -0400
+Processing by HomeController#index as HTML

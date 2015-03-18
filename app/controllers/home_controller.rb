@@ -4,7 +4,8 @@ class HomeController < ApplicationController
   def index
 
     pop = HTTParty.get('https://api.instagram.com/v1/media/popular?access_token=23131423.223b0db.6f8d56ddbfce4128936ecf2e8e926dce')['data']
-    
+
+
     pop_image_ids = []
 
 
@@ -13,8 +14,6 @@ class HomeController < ApplicationController
 
     pop.each do |item|
       pop_image_ids << item["id"] # get ids of images
-
-
 
       item['comments']['data'].each do |commenter| # get all commenters
 
@@ -35,8 +34,7 @@ class HomeController < ApplicationController
           user['following_to_follower_ratio'] = 0
         end 
 
-
-        commenters << user
+        commenters << user unless user['following_to_follower_ratio'] == 0
       end
      
       # item['likes']['data'].each do |liker| # get all likers
@@ -54,6 +52,9 @@ class HomeController < ApplicationController
       # end
       
     end
+    commenters.sort_by { |hash| hash["following_to_follower_ratio"] } #sort by ratio
+
+    binding.pry
 
     render(:index, {locals: {commenters: commenters} } )
   end
