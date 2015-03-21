@@ -815,3 +815,44 @@ Completed   in 11311ms
 
 Started GET "/" for 127.0.0.1 at 2015-03-17 20:59:31 -0400
 Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 673668ms (Views: 275.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-17 21:10:45 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 21:10:55 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 68789ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-17 21:12:04 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 21:12:09 -0400
+
+SyntaxError (/Users/AdrianMLin/dev/Projects/follow-prop/app/controllers/home_controller.rb:7: syntax error, unexpected '=', expecting keyword_end
+    end = Time.now
+         ^
+/Users/AdrianMLin/dev/Projects/follow-prop/app/controllers/home_controller.rb:66: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/home_controller.rb:7: syntax error, unexpected '=', expecting keyword_end
+  app/controllers/home_controller.rb:66: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.5ms)
+  Rendered /Users/AdrianMLin/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 21:14:13 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 9364512ms (Views: 284.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-17 23:50:18 -0400
+Processing by HomeController#index as HTML
+Completed   in 1744ms
