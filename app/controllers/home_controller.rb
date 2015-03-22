@@ -11,7 +11,7 @@ class HomeController < ApplicationController
     # likers = []
 
     pop.each do |item|
-      # pop_image_ids << item["id"] # get ids of images
+      # pop_image_ids << item["id"] # get ids of images f
 
       item['comments']['data'].each do |commenter| # get all commenters
 
